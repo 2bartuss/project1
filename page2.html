@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekcje Strony 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h1 {
+            color: #66b2ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 10px 5px 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005a9e;
+        }
+        .content {
+            border: 1px solid #444;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #1c1c1c;
+            display: block;
+        }
+        textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #2c2c2c;
+            color: white;
+        }
+        textarea:disabled {
+            background-color: #3a3a3a;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Sekcje Strony 1
+        <button onclick="location.href='index.html'">Wróć</button>
+    </h1>
+
+    <div class="content">
+        <h2>Sekcja 1</h2>
+        <button onclick="toggleSection('section1')">Zamknij/Otwórz Sekcję 1</button>
+        <div id="section1">
+            <p>To jest sekcja 1, którą można otworzyć lub zamknąć.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Sekcja 2</h2>
+        <button onclick="toggleSection('section2')">Zamknij/Otwórz Sekcję 2</button>
+        <div id="section2">
+            <p>To jest sekcja 2, którą można otworzyć lub zamknąć.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Sekcja 3</h2>
+        <button onclick="toggleSection('section3')">Zamknij/Otwórz Sekcję 3</button>
+        <div id="section3">
+            <p>To jest sekcja 3, którą można otworzyć lub zamknąć.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Sekcja 4</h2>
+        <button onclick="toggleSection('section4')">Zamknij/Otwórz Sekcję 4</button>
+        <div id="section4">
+            <p>To jest sekcja 4, którą można otworzyć lub zamknąć.</p>
+        </div>
+    </div>
+    
+
+    <script>
+        // Funkcja do otwierania i zamykania sekcji
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+
+
+    
+       
+</body>
+</html>

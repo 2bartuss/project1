@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatki o Karcie Graficznej</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 button {
+            font-size: 1.4rem;
+            padding: 8px 15px;
+            margin-left: 15px;
+            background-color: #66b2ff;
+            color: #121212;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        h1 button:hover {
+            background-color: #1e75d8;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            color: #66b2ff;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .content-container {
+            max-width: 2000px;
+            width: 100%;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        Karta Graficzna
+        <button onclick="window.location.href='page1.html'">Wróć</button>
+    </h1>
+
+    <div class="content-container">
+        <h2>1. Co to jest karta graficzna?</h2>
+        <p>Karta graficzna (GPU) to podzespół komputera odpowiedzialny za renderowanie obrazu, wideo oraz animacji. Współczesne karty graficzne obsługują również obliczenia równoległe, wykorzystywane w sztucznej inteligencji i obliczeniach naukowych.</p>
+
+        <h2>2. Kluczowe cechy karty graficznej</h2>
+        <p><strong>VRAM:</strong> Pamięć wideo, która przechowuje dane potrzebne do wyświetlania grafiki. Im więcej VRAM, tym lepsza wydajność w grach i aplikacjach graficznych.</p>
+        <p><strong>Rdzenie CUDA (dla NVIDII) / Stream Processory (dla AMD):</strong> Jednostki obliczeniowe karty graficznej odpowiedzialne za równoległe przetwarzanie danych.</p>
+        <p><strong>Wyjścia wideo:</strong> Porty, takie jak HDMI, DisplayPort, które pozwalają na podłączenie monitora do karty graficznej.</p>
+    </div>
+
+</body>
+</html>

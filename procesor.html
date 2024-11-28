@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatki o Procesorze</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3.5rem; /* Zmniejszony rozmiar tytułu */
+            text-align: center;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 button {
+            font-size: 1.4rem; /* Zmniejszony rozmiar czcionki przycisku */
+            padding: 8px 15px;
+            margin-left: 15px;
+            background-color: #66b2ff;
+            color: #121212;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        h1 button:hover {
+            background-color: #1e75d8;
+        }
+        h2 {
+            font-size: 1.5rem; /* Zmniejszony rozmiar nagłówków */
+            margin-top: 30px;
+            color: #66b2ff;
+        }
+        p {
+            font-size: 1rem; /* Zmniejszony rozmiar tekstu */
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .content-container {
+            max-width: 2000px; /* Zmniejszona szerokość kontenera */
+            width: 100%;
+            background-color: #1e1e1e;
+            padding: 20px; /* Zmniejszony padding */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .link {
+            text-decoration: none;
+            font-size: 1.4rem; /* Zmniejszony rozmiar linków */
+            font-weight: bold;
+            color: #66b2ff;
+            padding: 15px;
+            border: 2px solid #66b2ff;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .link:hover {
+            background-color: #66b2ff;
+            color: #121212;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        Procesor
+        <!-- Przycisk obok tytułu -->
+        <button onclick="window.location.href='page1.html'">Wróć</button>
+    </h1>
+
+    <div class="content-container">
+        <h2>1. Co to jest procesor?</h2>
+        <p>
+            Procesor (CPU – Central Processing Unit) to główny komponent komputera, odpowiedzialny za wykonywanie obliczeń i przetwarzanie danych.
+            Działa na zasadzie wykonywania poleceń zawartych w programach komputerowych i zarządzania pracą innych komponentów systemu.
+        </p>
+
+        <h2>2. Kluczowe cechy procesora</h2>
+        <p><strong>Rdzenie (Cores):</strong> Procesor składa się z rdzeni, które umożliwiają jednoczesne wykonywanie wielu operacji. Nowoczesne procesory mają od 4 do 16 rdzeni, co pozwala na wielozadaniowość.</p>
+        <p><strong>Wątki (Threads):</strong> Wątki to jednostki pracy, które procesor może wykonywać równolegle. Technologia Hyper-Threading pozwala na uruchamianie dwóch wątków na jednym rdzeniu.</p>
+        <p><strong>Taktowanie (Clock Speed):</strong> Mierzone w GHz, wskazuje częstotliwość pracy procesora. Wyższe taktowanie zwykle oznacza szybszą wydajność.</p>
+        <p><strong>Pamięć podręczna (Cache):</strong> Pamięć, która przechowuje najczęściej używane dane, aby przyspieszyć dostęp do nich. Zwykle procesory mają pamięci L1, L2 i L3, różniące się pojemnością i szybkością.</p>
+
+        <h2>3. Typy procesorów</h2>
+        <p><strong>Procesory Intela:</strong> Intel jest jednym z największych producentów procesorów. Ich procesory serii i3, i5, i7 i i9 są popularne w komputerach stacjonarnych i laptopach.</p>
+        <p><strong>Procesory AMD:</strong> AMD oferuje procesory z serii Ryzen, które są konkurencyjne pod względem wydajności i ceny w porównaniu do produktów Intela.</p>
+
+        <h2>4. Jak działa procesor?</h2>
+        <p>
+            Procesor odbiera instrukcje z pamięci RAM, interpretuje je i wykonuje obliczenia. Zwykle operacje obejmują proste obliczenia matematyczne, przetwarzanie danych wejściowych/wyjściowych oraz zarządzanie pamięcią.
+            Procesory wykonują to za pomocą tzw. cykli zegara – jednostek czasu, które wyznaczają częstotliwość operacji.
+        </p>
+
+        <h2>5. Zastosowanie procesorów</h2>
+        <p>
+            Procesory są wykorzystywane w szerokim zakresie urządzeń:
+            <ul>
+                <li><strong>Komputery stacjonarne i laptopy:</strong> Wykorzystywane w codziennej pracy, grach, edycji multimediów, programowaniu itp.</li>
+                <li><strong>Urządzenia mobilne:</strong> Smartfony i tablety używają procesorów ARM, które zapewniają wysoką efektywność energetyczną.</li>
+                <li><strong>Superkomputery:</strong> Wykorzystują procesory o dużej liczbie rdzeni do obliczeń naukowych i symulacji.</li>
+            </ul>
+        </p>
+    </div>
+
+</body>
+</html>

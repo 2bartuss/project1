@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatki o Zasilaczu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 button {
+            font-size: 1.4rem;
+            padding: 8px 15px;
+            margin-left: 15px;
+            background-color: #66b2ff;
+            color: #121212;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        h1 button:hover {
+            background-color: #1e75d8;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            color: #66b2ff;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .content-container {
+            max-width: 2000px;
+            width: 100%;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        Zasilacz
+        <button onclick="window.location.href='page1.html'">Wróć</button>
+    </h1>
+
+    <div class="content-container">
+        <h2>1. Co to jest zasilacz?</h2>
+        <p>Zasilacz (PSU - Power Supply Unit) to komponent komputera odpowiedzialny za dostarczanie odpowiedniej ilości energii elektrycznej do wszystkich podzespołów. Zasilacz przekształca prąd zmienny (AC) z gniazdka elektrycznego na prąd stały (DC), który jest używany przez komputer.</p>
+
+        <h2>2. Kluczowe cechy zasilacza</h2>
+        <p><strong>Moc (W):</strong> Zasilacze są klasyfikowane na podstawie ich mocy wyjściowej. Zwykle moc zasilacza dla komputerów stacjonarnych wynosi od 300W do 1500W, w zależności od konfiguracji systemu.</p>
+        <p><strong>Efektywność energetyczna:</strong> Określa, jak efektywnie zasilacz przekształca prąd zmienny na prąd stały. Zasilacze z certyfikatem 80 PLUS zapewniają wysoką efektywność energetyczną.</p>
+        <p><strong>Certyfikaty i zabezpieczenia:</strong> Zasilacze wyposażone są w zabezpieczenia przeciwprzepięciowe, przeciążeniowe oraz przeciwzwarciowe, które chronią komponenty komputera przed uszkodzeniem.</p>
+    </div>
+
+</body>
+</html>
